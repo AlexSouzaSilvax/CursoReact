@@ -59,7 +59,7 @@ public class ApiCarro {
 
         Gson g = new Gson();
 
-        return Response.status(200).entity(g.toJson(listaCarros)).header("Access-Control-Allow-Origin", "*").build();
+        return Response.ok().entity(g.toJson(listaCarros)).header("Access-Control-Allow-Origin", "*").build();
     }
 
 /*    public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException {
